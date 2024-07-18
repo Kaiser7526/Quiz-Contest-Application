@@ -1,0 +1,313 @@
+/* Reset default margin and font family for the entire document */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #212832 !important;
+  color: white;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Define styles for code blocks */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #2d2d44;
+  color: #f8f8f2;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 0.1em;
+}
+
+/* Highlight for incorrect elements or responses */
+.wrong {
+  background-color: #ee545338 !important;
+  border-left: 4px solid #EE5453 !important;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Highlight for correct elements or responses */
+.right {
+  background-color: #28ae6138 !important;
+  border-left: 4px solid #28AE61 !important;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Additional styles for icons associated with correct responses */
+.rightIcon {
+  background-color: #28AE61 !important;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Additional styles for icons associated with incorrect responses */
+.wrongIcon {
+  background-color: #EE5453 !important;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* Highlight for selected options */
+.optionSelected {
+  background-color: #3d1f463d !important;
+  border-radius: 4px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  /* Add styles for small screens */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Typography styles for headings and paragraphs */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.2;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #dddddd;
+}
+
+/* Button styles with hover and active effects */
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  background-color: #003c80;
+  transform: translateY(0);
+}
+
+/* Link styles with smooth hover transitions */
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Box shadows for elements */
+.box {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #2b2b3a;
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Form styles for input fields and buttons */
+input[type="text"],
+input[type="email"] {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  background-color: #3a3a4f;
+  color: #ffffff;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #007bff;
+  background-color: #4a4a5f;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #28ae61;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+input[type="submit"]:hover {
+  background-color: #1f8d4d;
+  transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+  background-color: #1b703c;
+  transform: translateY(0);
+}
+
+/* Smooth fading transition */
+.transition-fade {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.transition-fade:hover {
+  opacity: 0.8;
+}
+
+/* Custom styles for specific elements */
+.custom-header {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
+}
+
+.custom-footer {
+  background-color: #29293f;
+  padding: 20px;
+  text-align: center;
+  color: #aaaaaa;
+  border-top: 1px solid #444;
+  font-size: 0.9em;
+}
+
+/* Additional custom styles for NavBar */
+.navbar {
+  background-color: #2e2e3f;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #444;
+}
+
+.navbar a {
+  color: #e0e0e0;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+/* Additional custom styles for Home Page */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #212832;
+}
+
+.home-title {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Additional custom styles for About Page */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #212832;
+}
+
+.about-title {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Additional custom styles for Review Page */
+.review-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #212832;
+}
+
+.review-title {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Center form elements and adjust their size */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input,
+form select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #3a3a4f;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #007bff;
+  background-color: #4a4a5f;
+  outline: none;
+}
+
+form input[type="submit"] {
+  width: auto;
+  background-color: #28ae61;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1f8d4d;
+  transform: translateY(-2px);
+}
+
+form input[type="submit"]:active {
+  background-color: #1b703c;
+  transform: translateY(0);
+}
